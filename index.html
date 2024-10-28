@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guesser</title>
+    <link rel="stylesheet" href="./assets/reset.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <div class="flex nav">
+      <div class="again">
+        <button>Again!</button>
+      </div>
+      <div>
+        <p>(Between 1 and 20)</p>
+      </div>
+    </div>
+    <div class="design">
+      <div>
+        <h1>Guess My Number!</h1>
+      </div>
+      <div class="brand">
+        <div class="question_box">?</div>
+        <div class="horizontal_line"></div>
+      </div>
+    </div>
+    <div class="interactive flex">
+      <div class="check_box flex-column">
+        <input type="number" />
+        <button id="check">Check !</button>
+      </div>
+      <div class="score_box flex-column">
+        <h3 id="result_of_guess">Start guessing...</h3>
+        <div class="score flex-column">
+          <h3 class="score_h">Score: <span id="score">20</span></h3>
+          <h3>&#x1F3C5; Highscore: <span id="highscore">0</span></h3>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
