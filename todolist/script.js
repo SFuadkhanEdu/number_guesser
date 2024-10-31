@@ -11,14 +11,14 @@ form.addEventListener('submit', function(e) {
 Object.keys(localStorage).forEach(key => {
     createTask(localStorage.getItem(key));
 });
-function createTask() {
+function createTask(input) {
     if (inp.value.trim() === '') {
         alert('Please enter a task');
         return;
     }
    let newLi = document.createElement('li');
     let taskText = document.createElement('span');
-    taskText.textContent = inp.value;
+    taskText.textContent = input ?? inp.value;
     let button = document.createElement('button');
     button.textContent = 'Delete';
     button.classList.add('delete');

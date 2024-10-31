@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(233,0,255,1) 100%);
+}
+h1,p{
+    text-align: center;
+}
+.container{
+    border-radius: 1.5rem;
+    display: flex;
+    position: relative;
+    width: 80%;
+    height: 60vh;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 20%;
+}
+.player_one, .player_two{
+    background-color: rgb(184, 166, 142);
+    width: 50%;
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.player_one_bottom, .player_two_bottom{
+    background-color: rgba(217, 0, 0, 0.446);
+    width: 50%;
+    height: 13%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 1rem;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    gap: 10px;
+}
+.player_two{
+    background-color: rgb(176, 36, 134);
+}
+.game_interface{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 50%;
+    gap: 30px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 80%;
+}
+.game_interface_bottom, .game_interface_top{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.game_interface_top div{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+}
+
+button{
+    border-radius: 1.5rem;
+    padding: 20px;
+}
