@@ -9,11 +9,13 @@ form.addEventListener('submit', function(e) {
     addTaskToLocal(inp.value);
 })
 Object.keys(localStorage).forEach(key => {
-    createTask(localStorage.getItem(key));
+    console.log(key);
+    
+    createTask(key);
 });
 function createTask(input) {
-    if (inp.value.trim() === '') {
-        alert('Please enter a task');
+    if (!input && !inp.value.trim())  {
+        // alert('Please enter a task');
         return;
     }
    let newLi = document.createElement('li');
